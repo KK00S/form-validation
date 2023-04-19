@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="./stylee.css">
+    <lin href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-10/css/all.min.css">
+</head>
+
+<body>
+    <div class="contianer">
+        <form class="form" id="form">
+            <div class="heard">
+                <h1> Create Account </h1>
+            </div>
+            <div class="form-control">
+                <label for="User Name">User Name </label>
+                <div>
+                    <input type="text" placeholder="User Name" id="username">
+                    <p class="usernameerror" id="usererror">Please Enter User Name</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="Email">Email </label>
+                <div>
+                    <input type="text" placeholder="Email@.com" id="email">
+                    <p class="Emailerror" id="emailerror">Please Enter Email</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <div>
+                    <input type="text" placeholder="Password" id="password">
+                    <p class="passworderror" id="passworderror">Please Enter password</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="conpassword">Confirm password </label>
+                <div>
+                    <input type="text" placeholder="Confirm Password" id="conpassword">
+                    <p class="conpassworderror" id="conpassworderror">Please Enter password</p>
+                </div>
+            </div>
+            <div class="formbutton">
+                <button type="button" class="sub-button" onclick="myfunction()">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function myfunction() {
+
+            if (document.getElementById('username').value === '') {
+                document.getElementById('username').style.borderBottom = '2px solid red';
+                document.getElementById('usererror').style.display = 'block';
+            }
+            else {
+                document.getElementById('username').style.borderBottom = '2px solid rgba(68, 255, 0, 0.747)';
+                document.getElementById('usererror').style.display = 'none';
+            }
+
+
+            if (document.getElementById('email').value === '') {
+                document.getElementById('email').style.borderBottom = '2px solid red';
+                document.getElementById('emailerror').style.display = 'block';
+            }
+            else {
+                document.getElementById('email').style.borderBottom = '2px solid rgba(68, 255, 0, 0.747)';
+                document.getElementById('emailerror').style.display = 'none';
+            }
+
+
+            if (document.getElementById('password').value === '') {
+                document.getElementById('password').style.borderBottom = '2px solid red';
+                document.getElementById('passworderror').style.display = 'block';
+            }
+            else {
+                document.getElementById('password').style.borderBottom = '2px solid rgba(68, 255, 0, 0.747)';
+                document.getElementById('passworderror').style.display = 'none';
+            }
+
+
+            if (document.getElementById('conpassword').value === '') {
+                document.getElementById('conpassword').style.borderBottom = '2px solid red';
+                document.getElementById('conpassworderror').style.display = 'block';
+            }
+            else {
+                document.getElementById('conpassword').style.borderBottom = '2px solid rgba(68, 255, 0, 0.747)';
+                document.getElementById('conpassworderror').style.display = 'none';
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

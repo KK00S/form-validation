@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(80, 49, 172);
+}    
+
+.heard {
+    text-align: center;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form {
+    width: 35%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(16, 11, 11);
+    background-color: white;
+}
+
+.form-control>label {
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.form-control>input {
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1.5px solid rgb(40, 40, 40);
+}
+
+.form-control>div>input {
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1.5px solid rgb(40, 40, 40);
+}
+
+.sub-button {
+    width: 40%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.formbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.usernameerror {
+    color: red;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: none;
+}
+
+.Emailerror {
+    color: red;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: none;
+}
+
+.passworderror {
+    color: red;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: none;
+}
+
+.conpassworderror {
+    color: red;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: none;
+}
+
+div:hover>label {
+    color: blue;
+}
